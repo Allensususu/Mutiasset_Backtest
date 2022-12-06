@@ -19,7 +19,10 @@ asset ="2330.TW,0050.TW"
 
 #################
 
+prices = ffn.get(asset,start='2017-01-01' )#,itot,gld,ivv,uso
 
+prices.to_csv('大擂台用.csv',encoding="utf_8_sig")
 ```
+執行資料夾下也會產生大擂台用.csv，csv可以丟入大擂台回測
 
 step3 再將所有執行格子跑遍
